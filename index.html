@@ -6,34 +6,65 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
   <style>
+  /* Coolors Exported Palette - coolors.co/03bbc0-52d1dc-adeee3-c9ddff-272727 */
+
+  /* HSL */
+  :root {
+    --color1: #160C28;
+    --color2: #F61067;
+    --color3: #00F0B5;
+    --color4: #4A4063;
+    --color5: #BFACC8;
+  }
   img {
+    box-sizing: border-box;
     width: 100%;
+    border: 0.5em solid;
+    border-color: var(--color5);
   }
   h1 {
-    color: #FFBA08;
-    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 3em;
+    color: var(--color5);
   }
   p {
-    color: #FFBA08;
-    font-family: 'Roboto Slab', serif;
+    color: var(--color5);
   }
+
+  a {
+    color: var(--color5);
+  }
+  a:hover {
+    color: var(--color3);
+  }
+
   body {
-    background-color: #1C3144;
+    font-family: 'Roboto Slab', serif;
+    background-image: url("images/bird.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color: var(--color4);
+    margin: 0;
   }
-</style>
+  div.main {
+    margin-top: 32.5em;
+    padding: 0.5em;
+    padding-bottom: 30em;
+    background-color: var(--color1);
+  }
+  </style>
 
-<title>Toa Carney's Portfolio</title>
+  <title>Toa Carney's Portfolio</title>
 </head>
-
 <body>
-  <a href="http://myfreyberg.com/carney/">
-    <img src="/images/bird.png">
-  </a>
-  <h1>Toa Carney's Portfolio</h1>
-  <p>
-    This is a portfolio about Toa Carney. You're welcome.
-  </p>
-
+  <div class="main">
+    <h1>Toa Carney's Portfolio</h1>
+    <p>
+      This is a portfolio about Toa Carney. You're welcome.
+    </p>
+    <a href="http://myfreyberg.com/carney/">My Freyberg</a>
+  </div>
 </body>
 
 </html>

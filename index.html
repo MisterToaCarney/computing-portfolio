@@ -24,8 +24,9 @@
   }
   h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 100px;
     color: var(--color5);
+    margin: 0;
   }
   p {
     color: var(--color5);
@@ -47,24 +48,57 @@
     background-color: var(--color1);
     margin: 0;
   }
-  div.content {
-    margin-top: 40%;
+  #content {
+    margin-top: 45%;
     padding: 0.5em;
     padding-bottom: 9em;
     background-color: var(--color1);
     box-shadow: 0px -10px 50px 50px #160C28;
+  }
+  .subSection {
+    border: 2px double var(--color2);
+    width: 45%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  .test {
+    border: 2px solid var(--color2);
+    width: 100%;
+    display: block;
+  }
+  #left {
+    float: left;
+  }
+  #right {
+    float: right;
   }
   </style>
 
   <title>Toa Carney's Portfolio</title>
 </head>
 <body>
-  <div class="content">
+  <div id="content">
     <h1>Toa Carney's Portfolio</h1>
     <p>
       This is a portfolio about Toa Carney. You're welcome.
     </p>
-    <a href="http://myfreyberg.com/carney/">My Freyberg</a>
+    <p>
+      Here's a link to my
+      <a href="http://myfreyberg.com/carney/">blog</a>
+    </p>
+    <div id="right" class="subSection">
+      <p>
+        Right text
+      </p>
+    </div>
+    <div id="left" class="subSection">
+      <p>
+        Left text
+      </p>
+    </div>
+    <div class="test">
+      <p>Hello</p>
+    </div>
   </div>
 </body>
 

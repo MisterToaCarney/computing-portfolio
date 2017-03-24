@@ -1,0 +1,140 @@
+/*
+Predefined color scheme
+*/
+:root {
+  --color1: #160C28;
+  --color2: #F61067;
+  --color3: #00F0B5;
+  --color4: #4A4063;
+  --color5: #BFACC8;
+}
+img {
+  box-sizing: border-box;
+  width: 100%;
+  border-color: var(--color5);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  color: var(--color5);
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 1em;
+}
+h2 {
+  text-align: left;
+  font-size: 35px;
+  margin-bottom: 0.5em;
+}
+
+
+p {
+  color: var(--color5);
+}
+
+a {
+  color: var(--color5);
+}
+a:hover {
+  color: var(--color3);
+}
+
+ul {
+
+}
+
+ul.nav {
+  z-index: 1;
+  list-style: none;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+li {
+  float: left;
+  width: 100%;
+}
+
+.nav li a {
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  background-color: var(--color4);
+}
+
+
+body {
+  color: var(--color5);
+  font-size: 1.5em;
+  font-family: 'Roboto Slab', serif;
+  background-image: url("images/bird.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: var(--color1);
+  margin: 0;
+}
+
+#content {
+  margin-top: 77vh;
+  padding: 0;
+  background-color: var(--color1);
+  box-shadow: 0px -10px 100px 45px #160C28;
+  display: inline-block;
+  width: 100%;
+}
+.subSection {
+  display: inline-block;
+  /*border: 2px double var(--color2);*/
+  box-sizing: border-box;
+  padding: 10px;
+}
+.subSection p {
+
+}
+
+.bottom {
+  box-sizing: border-box;
+  padding: 0.5em;
+  background-color: var(--color4);
+  float: left;
+  width: 100%;
+  display: block;
+}
+
+#left {
+  float: left;
+  width: 70%;
+}
+img#sideimg {
+  float: left;
+  width: 25%;
+  bottom: 0em;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+#right {
+  height: 10em;
+  float: right;
+  width: 30%;
+  display: inline-block;
+  background-color: var(--color4);
+}

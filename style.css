@@ -8,66 +8,68 @@ Predefined color scheme
   --color4: #4A4063;
   --color5: #BFACC8;
 }
-img {
-  box-sizing: border-box;
+
+img { /* image selector */
+  box-sizing: border-box; /* Ensure element size is calculated to its border rather than its content */
   width: 100%;
-  border-color: var(--color5);
+  border-color: var(--color5); /* Set colour to --color5 which is #BFACC8 */
 }
 
+/* Selector for h1,h2,h3 and h4 */
 h1,
 h2,
 h3,
 h4 {
-  text-align: center;
-  color: var(--color5);
-  margin: 0;
+  text-align: center; /* Center text */
+  color: var(--color5); /* Set colour to --color5 which is #BFACC8 */
+  margin: 0; /* Remove all margins */
 }
 
 h1 {
-  font-size: 50px;
-  margin-bottom: 1em;
+  font-size: 50px; /* set font size to 50 pixels */
+  margin-bottom: 1em; /* set bottom margin to 1 times the font size (50px) */
 }
 h2 {
-  text-align: left;
+  text-align: left; /* H2 aligns to left */
   font-size: 35px;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em; /* Set bottom margin to 0.5 times the font size (17.5px) */
 }
 
 
-p {
+p { /* paragraph */
   color: var(--color5);
 }
-
-a {
+a { /* anchor (link) */
   color: var(--color5);
 }
-a:hover {
+a:hover { /* anchor hover (apply this css when the cursor hovers over element) */
   color: var(--color3);
 }
 
-ul {
-
+ul { /* unordered list */
+  display: inline-block; /* set display type to inline-block */
+  margin-bottom: 1em;
 }
 
-ul.nav {
-  z-index: 1;
-  list-style: none;
-  position: fixed;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  background-color: var(--color1);
-  display: flex;
+ul.nav { /* an unordered list with the class of 'nav' */
+  z-index: 1; /* Bring element to the front (over the top of other content) */
+  list-style: none; /* remove bullet points */
+  position: fixed; /* fix element to viewport */
+  margin: 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+  top: 0; /* Bring to very top of viewport */
+  background-color: var(--color1); /* Set bg colour to --color1 */
+  display: flex; /* Ensure child elements are evenly spaced out */
   justify-content: space-around;
+  width: 100%; /* Span full width of page */
+}
+
+li { /* list item */
+  float: left; /* Float to the left of page */
   width: 100%;
 }
 
-li {
-  float: left;
-  width: 100%;
-}
-
-.nav li a {
+.nav li a { /* anchor inside a list of class 'nav' */
   font-size: 1.5em;
   display: block;
   text-align: center;
@@ -75,67 +77,71 @@ li {
   text-decoration: none;
 }
 
-.nav li a:hover {
+.nav li a:hover { /* Hover effect */
   background-color: var(--color4);
 }
 
 
-body {
-  color: var(--color5);
-  font-size: 1.5em;
-  font-family: 'Roboto Slab', serif;
-  background-image: url("images/bird.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-color: var(--color1);
-  margin: 0;
+body { /* All page content */
+  color: var(--color5); /* Colour to --color5 */
+  font-size: 1.5em; /* Font size to 1.5 time the default */
+  font-family: 'Roboto Slab', serif; /* Set font family */
+  background-image: url("images/lightning-bg.jpg"); /* Set bg image located at images/lightning-bg.jpg */
+  background-repeat: no-repeat; /* Do not repeat bg image */
+  background-attachment: fixed; /* Fix image to page */
+  background-size: 100%; /* Span all the way accross viewport */
+  background-color: var(--color1); /* Set the bg colour (behind the bg image) */
+  margin: 0; /* remove all margins */
 }
 
-#content {
-  margin-top: 77vh;
-  padding: 0;
-  background-color: var(--color1);
-  box-shadow: 0px -10px 100px 45px #160C28;
-  display: inline-block;
+#content { /* element with id 'content' */
+  margin-top: 60vh; /* Set top margin (allows user to see bg image) */
+  padding: 0; /* remove padding */
+  background-color: var(--color1); /* bg colour */
+  box-shadow: 0px -10px 100px 45px #160C28; /* Use box-shadow as a blur effect for the element */
+  display: inline-block; /* Set display type to inline-block */
   width: 100%;
 }
-.subSection {
+.subSection { /* Element with class 'subSection' */
   display: inline-block;
-  /*border: 2px double var(--color2);*/
-  box-sizing: border-box;
-  padding: 10px;
-}
-.subSection p {
-
+  box-sizing: border-box; /* Ensure element size is calculated to its border rather than its content */
+  padding: 10px; /* Set padding on all sides to 10 pixels */
 }
 
 .bottom {
-  font-size: 0.8em;
+  font-size: 0.7em;
   box-sizing: border-box;
-  padding: 0.5em 2em;
-  background-color: var(--color4);
+  padding: 0.5em 2em; /* Set padding on top-bottom to 0.5em and left-right to 2em */
+  background-color: var(--color4); /* bg colour */
   float: left;
   width: 100%;
-  display: block;
+  display: block; /* Display type block */
 }
 
-#left {
+#left { /* element with id 'left' */
   float: left;
   width: 70%;
 }
-img#sideimg {
+img#sideimg { /* image with id 'sideimg' */
   float: left;
   width: 25%;
   bottom: 0em;
-  position: relative;
+  position: relative; /* make position relative to viewport*/
   margin-bottom: 1em;
 }
 
-#right {
-  height: 10em;
+#right { /* element with id right (only used if multiple items in sidebar) */
+  height: 10em; /* Set element height to 10 times the font size */
   float: right;
   width: 30%;
   display: inline-block;
   background-color: var(--color4);
+}
+
+#leftFooter { /* Element with id 'leftFooter' */
+  float: left;
+  width: 70%;
+}
+#cc { /* Element with id 'cc' */
+  float: left;
 }

@@ -1,31 +1,70 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- Defining the document type as HTML-->
+<html> <!-- Start of document -->
 
-<head>
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-
-  <title>Toa Carney's Portfolio</title>
-</head>
-<body>
-  <ul class="nav">
-    <li><a href="index.html">Home</a></li>
+<head> <!-- Page header for importing css,fonts, setting title etc... -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> <!-- Link to font -->
+  <link rel="stylesheet" href="style.css"> <!-- stylesheet link -->
+  <meta charset="UTF-8"> <!-- Text Encoding for special characters e.g. é -->
+  <title>Toa Carney's Portfolio</title> <!-- Page title -->
+</head> <!-- End of page header -->
+<body> <!-- Page body, the content of the page goes here -->
+  <ul class="nav"> <!-- Nav Bar -->
+    <li><a href="index.html">Home</a></li> <!-- A Nav bar element -->
     <li><a href="about.html">About Me</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Résumé</a></li>
     <li><a href="achievements.html">Achievements</a></li>
-  </ul>
-  <div id="content">
-    <div id="left" class="subSection">
-      <h2>About - Toa Carney</h2>
-      <p>Content To Come</p> <!-- Sorry -->
-    </div>
-    <img id="sideimg" src="images/tmbprofile.png">
-    <div class="bottom">
-      <p>EMAIL: <a href="mailto:toacarney@students.freyberg.ac.nz">toacarney@students.freyberg.ac.nz</a></p>
-  </div>
-</div>
-</body>
+  </ul> <!-- End of nav bar -->
+  <div id="content"> <!-- Main Content Div -->
+    <div id="left" class="subSection"> <!-- Left section - Contains most of the page's content -->
+      <h2>About - Toa Carney</h2> <!-- Heading -->
+      <h3>Introduction</h3> <!-- Sub-heading -->
+      <p>My name is Toa Carney. I was born in the UK but I am from New Zealand. I have been living in New Zealand for <span id="time">about 5 years</span>. <!-- Text within span element will be changed by JavaScript -->
+        I live in Palmerston North and I am currently attending Freyberg High Schoool
+      </p> <!-- End Paragraph -->
+      <h3>Hobbies</h3> <!-- Another heading -->
+      <p> <!-- Another paragraph - You get the idea -->
+        One thing I really like doing is electronics prototyping. I like to build electrical devices out of second-hand components.
+        In addition to circuit building, I also like to tinker with the Arduino platform. Arduino is an open-source platform which merges hardware design with software design.
+        It allows you to build a circuit and automate that circuit with Input/Output pins.
+      </p>
+      <p>
+        Some of the things I have built are:
+      </p>
+      <ul> <!-- Unordered list -->
+        <li>Electromagnetic Feild Meter</li> <!-- List item -->
+        <li>Colour Organ</li>
+        <li>An inkjet printer that plays MIDI</li>
+        <li>Text Analysing Mood Light (Entered into the Manawatu Science and Technology Fair 2014)</li>
+      </ul>
+      <h3>Extras</h3>
+      <p>
+        I am a keen music person. I have been playing music since 2010. I am currently learning the Alto Saxophone at Freyberg High School.
+      </p>
+      <p>
+        One other thing I am in to is aviation. My uncle is a Pilot and he occasionaly takes me flying in his aircraft.
+      </p>
+    </div> <!-- End of left section -->
+    <img id="sideimg" alt="Toa Carney" src="images/tmbprofile.png"> <!--Sidebar image-->
+    <div class="bottom"> <!-- Footer - Contains contact info and license info -->
+      <div id="leftFooter"> <!-- Left part of the footer -->
+        <p>EMAIL: <a href="mailto:toacarney@students.freyberg.ac.nz">toacarney@students.freyberg.ac.nz</a><br> <!-- Line break tag inside of paragraph -->
+          PGP PUBLIC KEY <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x0D4CA0E60C8E8A68">2065 D8DA 8767 7871 1F6F  0B79 0D4C A0E6 0C8E 8A68</a></p> <!-- End of contact info paragraph -->
+        <p>Background image licensed under CC0 (Public Domain)</p> <!-- BG Image License info -->
+      </div> <!-- End left part of footer -->
+      <div> <!-- Right part of footer -->
+        <p>This website is licensed under the CC-BY-SA 4.0 license.</p>
+        <a id="cc" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="CC-BY-SA" src="images/cc-by-sa.png"></a> <!-- Clickable image -->
+      </div> <!-- End right part of footer -->
+  </div>  <!-- End of footer -->
+</div> <!-- End of page content div -->
 
-</html>
+<!-- Below is some JavaScript that calculates the amount of time I have been living in NZ for -->
+<script>
+var sdt = new Date("6/6/12"); //Set Date of Arrival to NZ
+var difdt = new Date(new Date() - sdt); //Calculate difference of Arrival to Current Date
+var humanReadable = (difdt.toISOString().slice(0, 4) - 1970) + " Years, " + (difdt.getMonth()+1) + " Months and " + difdt.getDate() + " Days"; //Create a human readable text string e.g 4 Years, 10 Months and 28 Days
+document.getElementById('time').innerHTML = humanReadable; //set the span element with the id of 'time' to the text string created above
+</script> <!-- End of Javascript -->
+
+</body> <!-- End of page body -->
+</html> <!-- End of document -->

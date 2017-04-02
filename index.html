@@ -1,43 +1,51 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- Defining the document type as HTML-->
+<html> <!-- Start of document -->
 
-<head>
-
+<head> <!-- Page header for importing css,fonts, setting title etc... -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> <!-- Link to font -->
-
   <link rel="stylesheet" href="style.css"> <!-- stylesheet link -->
-
-  <title>Toa Carney's Portfolio</title>
-</head>
-<body>
+  <meta charset="UTF-8"> <!-- Text Encoding for special characters e.g. é -->
+  <title>Toa Carney's Portfolio</title> <!-- Page title -->
+</head> <!-- End of page header -->
+<body> <!-- Page body, the content of the page goes here -->
   <ul class="nav"> <!-- Nav Bar -->
-    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html">Home</a></li> <!-- A Nav bar element -->
     <li><a href="about.html">About Me</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Résumé</a></li>
     <li><a href="achievements.html">Achievements</a></li>
-  </ul>
+  </ul> <!-- End of nav bar -->
   <div id="content"> <!-- Main Content Div -->
     <div id="left" class="subSection"> <!-- Left section - Contains most of the page's content -->
-      <h2>Home - Toa Carney</h2>
-      <p>
-        This is a portfolio about Toa Carney. Here you are able to aquire information regarding myself.
+      <h2>Home - Toa Carney</h2> <!-- Page heading -->
+      <p> <!-- Paragraph -->
+        This is a portfolio about Toa Carney. Here you are able to acquire information regarding me.
       </p>
       <p>
         Here is a basic overview of myself:
-      <ul>
-        <li>I lived in London.</li>
+      <ul> <!-- Unordered list -->
+        <li>I lived in London.</li> <!-- list item -->
         <li>I moved to New Zealand.</li>
         <li>I now live in Palmerston North</li>
-        <li>I <a href="https://github.com/superconductor42">code computers</a> and talk sometimes.</li>
+        <li>I <a href="https://github.com/superconductor42">code computers</a> and <a href="mailto:toacarney@students.freyberg.ac.nz">talk</a> sometimes.</li> <!-- List item that contains a mailto link -->
+        <li>I design electronic devices in my spare time.</li>
+        <li>I play the Alto Saxophone.</li>
+        <li>I have a small job at Telcospec Limited.</li>
         <li>I have a mad cat which is evil.</li>
-        <li>Here is a link to my <a href="http://myfreyberg.com/carney/">blog</a></li>
-      </ul>
-    </div>
-    <img id="sideimg" src="images/tmbprofile.png"> <!--Sidebar image-->
-    <div class="bottom">
-      <p>EMAIL: <a href="mailto:toacarney@students.freyberg.ac.nz">toacarney@students.freyberg.ac.nz</a></p>
-  </div>
-</div>
-</body>
-
-</html>
+        <li>Here is a link to my <a href="http://myfreyberg.com/carney/">blog</a></li> <!-- List item that contains a hyperlink -->
+      </ul> <!-- End of Unordered list -->
+    </div> <!-- End of the left section -->
+    <img id="sideimg" alt="Toa Carney" src="images/tmbprofile.png"> <!--Sidebar image-->
+    <div class="bottom"> <!-- Footer - Contains contact info and license info -->
+      <div id="leftFooter"> <!-- Left part of the footer -->
+        <p>EMAIL: <a href="mailto:toacarney@students.freyberg.ac.nz">toacarney@students.freyberg.ac.nz</a><br> <!-- Line break tag inside of paragraph -->
+          PGP PUBLIC KEY <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x0D4CA0E60C8E8A68">2065 D8DA 8767 7871 1F6F  0B79 0D4C A0E6 0C8E 8A68</a></p> <!-- End of contact info paragraph -->
+        <p>Background image licensed under CC0 (Public Domain)</p> <!-- BG Image License info -->
+      </div> <!-- End left part of footer -->
+      <div> <!-- Right part of footer -->
+        <p>This website is licensed under the CC-BY-SA 4.0 license.</p>
+        <a id="cc" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="CC-BY-SA" src="images/cc-by-sa.png"></a> <!-- Clickable image -->
+      </div> <!-- End right part of footer -->
+  </div> <!-- End of footer -->
+</div>  <!-- End of page content div -->
+</body> <!-- End of page body -->
+</html> <!-- End of document -->

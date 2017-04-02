@@ -1,39 +1,46 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- Defining the document type as HTML-->
+<html> <!-- Start of document -->
 
-<head>
-
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-
-  <title>Toa Carney's Portfolio</title>
-</head>
-<body>
-  <ul class="nav">
-    <li><a href="index.html">Home</a></li>
+<head> <!-- Page header for importing css,fonts, setting title etc... -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet"> <!-- Link to font -->
+  <link rel="stylesheet" href="style.css"> <!-- stylesheet link -->
+  <meta charset="UTF-8"> <!-- Text Encoding for special characters e.g. é -->
+  <title>Toa Carney's Portfolio</title> <!-- Page title -->
+</head> <!-- End of page header -->
+<body> <!-- Page body, the content of the page goes here -->
+  <ul class="nav"> <!-- Nav Bar -->
+    <li><a href="index.html">Home</a></li> <!-- A Nav bar element -->
     <li><a href="about.html">About Me</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="portfolio.html">Résumé</a></li>
     <li><a href="achievements.html">Achievements</a></li>
-  </ul>
-  <div id="content">
-    <div id="left" class="subSection">
-      <h2>Achievements - Toa Carney</h2>
-      <ul>
-        <li>2014 Manawatu Science and Technology Fair - Winner UCOL Trade and Technology Innovation Prize</li>
-        <li>2014 Manawatu Science and Technology Fair - 3rd Place BetaSolutions (Electronic)</li>
+  </ul> <!-- End of nav bar -->
+  <div id="content"> <!-- Main Content Div -->
+    <div id="left" class="subSection"> <!-- Left section - Contains most of the page's content -->
+      <h2>Achievements - Toa Carney</h2> <!-- Heading for achievements -->
+      <ul> <!-- Unordered list -->
+        <li>2014 Manawatu Science and Technology Fair - Winner UCOL Trade and Technology Innovation Prize</li> <!-- A list item -->
+        <li>2014 Manawatu Science and Technology Fair - 3rd Place BetaSolutions (Electronic)</li> <!-- Another list item... -->
         <li>2014 Manawatu Science and Technology Fair - Youth Judged Prize Fonterra dairy for life</li>
         <li>2014 ICAS Computing Skills - Top 3% of Year 8 Participants</li>
         <li>2014 ICAS Science - Top 28% of Year 8 Participants</li>
         <li>2015 Freyberg High School - Graduated with Distinction</li>
+        <li>2015 Freyberg High School - Excellence in Mathematics. Endevour in Performance Music and Robotics. Commitment to Concert Bands</li>
         <li>2016 Freyberg High School - Graduated with High Distinction</li>
-      </ul>
-    </div>
-    <img id="sideimg" src="images/tmbprofile.png">
-    <div class="bottom">
-      <p>EMAIL: <a href="mailto:toacarney@students.freyberg.ac.nz">toacarney@students.freyberg.ac.nz</a></p>
-  </div>
-</div>
-</body>
-
-</html>
+        <li>2016 Freyberg High School - Excellence in Computing, English, Mathematics. Endeavour in Social Science. Commitment to Ensembles.</li>
+      </ul> <!-- End of unordered list -->
+    </div> <!-- End of left section -->
+    <img id="sideimg" alt="Toa Carney" src="images/tmbprofile.png"> <!--Sidebar image-->
+    <div class="bottom"> <!-- Footer - Contains contact info and license info -->
+      <div id="leftFooter"> <!-- Left part of the footer -->
+        <p>EMAIL: <a href="mailto:toacarney@students.freyberg.ac.nz">toacarney@students.freyberg.ac.nz</a><br> <!-- Line break tag inside of paragraph -->
+          PGP PUBLIC KEY <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x0D4CA0E60C8E8A68">2065 D8DA 8767 7871 1F6F  0B79 0D4C A0E6 0C8E 8A68</a></p> <!-- End of contact info paragraph -->
+        <p>Background image licensed under CC0 (Public Domain)</p> <!-- BG Image License info -->
+      </div> <!-- End left part of footer -->
+      <div> <!-- Right part of footer -->
+        <p>This website is licensed under the CC-BY-SA 4.0 license.</p>
+        <a id="cc" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="CC-BY-SA" src="images/cc-by-sa.png"></a> <!-- Clickable image -->
+      </div> <!-- End right part of footer -->
+  </div> <!-- End of footer -->
+</div>  <!-- End of page content div -->
+</body> <!-- End of page body -->
+</html> <!-- End of document -->
